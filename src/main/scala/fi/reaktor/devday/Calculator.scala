@@ -14,8 +14,8 @@ class Calculator {
     value *= amount
     return value
   }
-  def squareRoot(): Double = {
-    value = math.sqrt(value)
+  def square(): Double = {
+    value *= value
     return value
   }
   def divide(amount: Double): Double = {
@@ -35,15 +35,14 @@ object Main {
     c.add(3)
     c.multiply(4)
     c.divide(5)
-    println(c.squareRoot())
+    println(c.square())
     var i = 1;
     var sum = 0.0
     while (i <= 100) {
       c.reset(i)
-      sum += c.squareRoot()
+      sum += c.square()
       i += 1
     }
     println(sum)
-    println((1 to 100).map { n => c.reset(n); c.squareRoot(); }.reduceLeft(_ + _))
   }
 }
