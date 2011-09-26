@@ -1,0 +1,20 @@
+Exercise 1
+----------
+Implement a simple calculator in Scala, using basic language constructs such as variables (var, val), functions (def),
+and classes. Required operations for the calculator are addition, subtraction, multiplication, division and square (x^2).
+Implement a console app (object with main method) that uses the calculator to perform the following
+calculations and output the result on the console:
+
+square(((2 + 3) * 4) / 5)
+sum(square( i )) where i = 1 .. 100
+
+Exercise 2
+----------
+
+Implement a simple calculator in Scala (with the same operations as in Exercise 1),
+applying fp-style concepts such as pattern matching, recursion, higher-order functions and case classes.
+
+Once again, perform these calculations and output the results on the console
+
+square(((2 + 3) * 4) / 5)
+sum(square( i )) where i = 1 .. 100
